@@ -19,7 +19,7 @@ class Library:
                 file.write(f"{title},{author},{releaseyear},{pages}\n")
             print("\nBook added successfully!")
 
-    def removebook(self,):
+    def removebook(self):
         title = input("Enter the title of the book you want to remove: ")
         books = []
         try :
