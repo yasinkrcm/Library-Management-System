@@ -17,7 +17,7 @@ class Library:
             pages = input("How many pages : ")
             with open("books.txt","+a",encoding="utf-8") as file :
                 file.write(f"{title},{author},{releaseyear},{pages}\n")
-            print("\nBook added successfully!")
+            print("\nBook added successfully")
 
     def removebook(self):
         title = input("Enter the title of the book you want to remove: ")
@@ -31,7 +31,7 @@ class Library:
                 for book in books:
                     if book[0] != title:
                         file.write(f"{','.join(book)}\n")
-                        print(f"\nBook '{title}' removed successfully!")
+                        print(f"\nBook '{title}' removed successfully")
         except FileNotFoundError:
              print("\nPlease add a book to the file")
         
