@@ -1,11 +1,14 @@
 class Library:
     def listbooks(self):
-        with open("books.txt","r",encoding="utf-8") as file:
-            for book in file:
-                book = book.splitlines()[0].split(",")
-                books = []
-                books.append(book)
-                print(f"Book Title : {books[0][0]} , Book Author : {books[0][1]} ")
+        try:
+            with open("books.txt","r",encoding="utf-8") as file:
+                for book in file:
+                    book = book.splitlines()[0].split(",")
+                    books = []
+                    books.append(book)
+                    print(f"Book Title : {books[0][0]} , Book Author : {books[0][1]} ")
+        except FileNotFoundError:
+                    print("\nPlease add a book to the file")
                 
     def addbook(self):
             title = input("Book title : ")
@@ -19,15 +22,19 @@ class Library:
     def removebook(self,):
         title = input("Enter the title of the book you want to remove: ")
         books = []
-        with open("books.txt", "r", encoding="utf-8") as file:
-            for book in file:
-                book = book.strip().splitlines()[0].split(",")
-                books.append(book)
-        with open("books.txt", "w", encoding="utf-8") as file:
-            for book in books:
-                if book[0] != title:
-                    file.write(f"{','.join(book)}\n")
-        print(f"\nBook '{title}' removed successfully!")
+        try :
+            with open("books.txt", "r", encoding="utf-8") as file:
+                for book in file:
+                    book = book.strip().splitlines()[0].split(",")
+                    books.append(book)
+            with open("books.txt", "w", encoding="utf-8") as file:
+                for book in books:
+                    if book[0] != title:
+                        file.write(f"{','.join(book)}\n")
+                        print(f"\nBook '{title}' removed successfully!")
+        except FileNotFoundError:
+             print("\nPlease add a book to the file")
+        
 
 lib = Library()
 
