@@ -8,7 +8,6 @@ class Library:
                 book = book.splitlines()[0].split(",")
                 books = []
                 books.append(book)
-                
                 print(f"Book Title : {books[0][0]} , Book Author : {books[0][1]} ")
                 
     def addbook(self):
@@ -17,7 +16,7 @@ class Library:
             releaseyear = input("First release year : ")
             pages = input("How many pages : ")
             with open("books.txt","+a",encoding="utf-8") as file :
-                file.write(f"\n{title},{author},{releaseyear},{pages}")
+                file.write(f"{title},{author},{releaseyear},{pages}\n")
             print("\nBook added successfully!")
 
     def removebook(self, title):
@@ -44,14 +43,14 @@ while True:
 3) Remove Book 
 4) Quit
 Enter your choice (1-4): """)
+    if choice == "4" :
+        break
     if choice == "1" :
         lib.listbooks()
     elif choice == "2":
         lib.addbook()
     elif choice == "3":
         title = input("Enter the title of the book you want to remove: ")
-        lib.removebook(title)
-    if choice == "4" :
-        break
+        lib.removebook(title)    
     else:
         print("Invalid choice. Please enter a number between 1 and 4.")
