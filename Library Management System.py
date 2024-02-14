@@ -53,3 +53,5 @@ Enter your choice (1-4): """)
         lib.removebook(title)
     if choice == "4" :
         break
+    else:
+        print("Invalid choice. Please enter a number between 1 and 4.")
