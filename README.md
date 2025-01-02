@@ -6,10 +6,8 @@
     <title>Library Management System</title>
 </head>
 <body>
-
     <h1>Library Management System</h1>
     <p><strong>Welcome to the Library Management System project!</strong> This Python-based application allows you to manage books in a library. You can add new books, view the list of available books, and remove books using a simple menu interface. This system is designed to be intuitive and easy to use, making it perfect for library management tasks.</p>
-
     <h2>Table of Contents</h2>
     <ol>
         <li><a href="#description">Description</a></li>
@@ -19,7 +17,6 @@
         <li><a href="#file-structure">File Structure</a></li>
         <li><a href="#contributing">Contributing</a></li>
     </ol>
-
     <h2 id="description">Description</h2>
     <p>The Library Management System is a simple console application written in Python. It allows users to:</p>
     <ul>
