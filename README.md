@@ -1,100 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
-</head>
-<body>
-    <h1>Library Management System</h1>
-    <p><strong>Welcome to the Library Management System project!</strong> This Python-based application allows you to manage books in a library. You can add new books, view the list of available books, and remove books using a simple menu interface. This system is designed to be intuitive and easy to use, making it perfect for library management tasks.</p>
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#file-structure">File Structure</a></li>
-        <li><a href="#contributing">Contributing</a></li>
-    </ol>
-    <h2 id="description">Description</h2>
-    <p>The Library Management System is a simple console application written in Python. It allows users to:</p>
-    <ul>
-        <li>Add books to a library.</li>
-        <li>List all the books in the library.</li>
-        <li>Remove books from the library by their unique ID.</li>
-    </ul>
-    <p>The application stores book data in a text file named <code>books.txt</>, which contains information about each book, such as its title, author, release year, and the number of pages.</p>
+# Library Management System
 
-    <h2 id="features">Features</h2>
-    <p>This system provides the following features:</p>
-    <ul>
-        <li><strong>Add Book</strong>: Allows you to add a new book with details like title, author, release year, and pages.</li>
-        <li><strong>List Books</strong>: Displays all books currently stored in the library with their ID, title, author, and number of pages.</li>
-        <li><strong>Remove Book</strong>: Allows you to remove a book by providing its unique ID.</li>
-    </ul>
+**Welcome to the Library Management System project!** This Python-based application allows you to manage books in a library. You can add new books, view the list of available books, and remove books using a simple menu interface. This system is designed to be intuitive and easy to use, making it perfect for library management tasks.
 
-    <h2 id="installation">Installation</h2>
-    <h3>Prerequisites</h3>
-    <p>To run this project, you need to have Python 3.x installed on your computer. You can download and install Python from <a href="https://www.python.org/downloads/" target="_blank">here</a>.</p>
+## Table of Contents
+1. [Description](#description)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [File Structure](#file-structure)
+6. [Contributing](#contributing)
 
-    <h3>Steps to Install</h3>
-    <ol>
-        <li>Clone the repository from GitHub to your local machine:</li>
-        <pre><code>git clone https://github.com/yasinkrcm/Library-Management-System.git</code></pre>
-        
-        <li>Navigate to the project directory:</li>
-        <pre><code>cd Library-Management-System</code></pre>
-        
-        <li>The only requirement is Python 3.x, so ensure that Python is installed and available in your system's PATH.</li>
-        
-        <li>Run the program with the following command:</li>
-        <pre><code>python library_management_system.py</code></pre>
-    </ol>
+## Description
+The Library Management System is a simple console application written in Python. It allows users to:
+- Add books to a library.
+- List all the books in the library.
+- Remove books from the library by their unique ID.
 
-    <h2 id="usage">Usage</h2>
-    <p>Once the program is running, you will see a menu with the following options:</p>
-    <ul>
-        <li><strong>List Books</strong> - View a list of all the books in the library.</li>
-        <li><strong>Add Book</strong> - Add a new book to the library with its details.</li>
-        <li><strong>Remove Book</strong> - Remove a book from the library using its ID.</li>
-        <li><strong>Quit</strong> - Exit the program.</li>
-    </ul>
+The application stores book data in a text file named `books.txt`, which contains information about each book, such as its title, author, release year, and the number of pages.
 
-    <h3>Example Interaction</h3>
-    <h4>Adding a Book:</h4>
-    <pre><code>
-    Book title: The Great Gatsby
-    Book author: F. Scott Fitzgerald
-    First release year: 1925
-    How many pages: 218
-    Book added successfully!
-    </code></pre>
+## Features
+This system provides the following features:
+- **Add Book**: Allows you to add a new book with details like title, author, release year, and pages.
+- **List Books**: Displays all books currently stored in the library with their ID, title, author, and number of pages.
+- **Remove Book**: Allows you to remove a book by providing its unique ID.
 
-    <h4>Removing a Book:</h4>
-    <pre><code>
-    Enter the ID of the book you want to remove: 1
-    Book with ID '1' removed successfully!
-    </code></pre>
+## Installation
 
-    <h2 id="file-structure">File Structure</h2>
-    <p>The project has the following file structure:</p>
-    <pre><code>
-    Library-Management-System/
-    ├── library_management_system.py  # Main Python program
-    ├── books.txt                    # Data file containing books information
-    └── README.md                    # Documentation file (this file)
-    </code></pre>
-    <p>All book data is stored in the <code>books.txt</code> file. Each book's details are separated by commas in the following order: ID, title, author, release year, and number of pages.</p>
+### Prerequisites
+To run this project, you need to have Python 3.x installed on your computer. You can download and install Python from [here](https://www.python.org/downloads/).
 
-    <h2 id="contributing">Contributing</h2>
-    <p>If you want to contribute to this project, feel free to fork the repository and submit pull requests. If you find any issues or have suggestions for new features, please open an issue in the GitHub repository. Contributions are always welcome!</p>
+### Steps to Install
+1. Clone the repository from GitHub to your local machine:
+    ```bash
+    git clone https://github.com/yasinkrcm/Library-Management-System.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Library-Management-System
+    ```
+3. The only requirement is Python 3.x, so ensure that Python is installed and available in your system's PATH.
+4. Run the program with the following command:
+    ```bash
+    python "Library Management System.py"
 
-    <p><strong>Note:</strong> Ensure that you test your changes thoroughly before submitting a pull request.</p>
+    ```
 
-    <footer>
-        <p>Thank you for using the Library Management System!</p>
-    </footer>
+## Usage
+Once the program is running, you will see a menu with the following options:
+- **List Books**: View a list of all the books in the library.
+- **Add Book**: Add a new book to the library with its details.
+- **Remove Book**: Remove a book from the library using its ID.
+- **Quit**: Exit the program.
 
-</body>
-</html>
+### Example Interaction
+
+#### Adding a Book:
+
+Book title: The Great Gatsby
+Book author: F. Scott Fitzgerald
+First release year: 1925
+How many pages: 218<br>
+Book added successfully!
+
+
+#### Removing a Book:
+
+
+Enter the ID of the book you want to remove: 1<br>
+Book with ID '1' removed successfully!
+
+
+## File Structure
+
+The project has the following file structure:
+
+<p>
+
+Library-Management-System/<br><br>
+├── library_management_system.py  # Main Python program<br>
+├── books.txt                    # Data file containing books information<br>
+└── README.md                    # Documentation file (this file)<br>
+</p>
+
+All book data is stored in the `books.txt` file. Each book's details are separated by commas in the following order: ID, title, author, release year, and number of pages.
+
+## Contributing
+
+If you want to contribute to this project, feel free to fork the repository and submit pull requests. If you find any issues or have suggestions for new features, please open an issue in the GitHub repository. Contributions are always welcome!
+
+**Note:** Ensure that you test your changes thoroughly before submitting a pull request.
+
+
+
+Thank you for using the Library Management System!
